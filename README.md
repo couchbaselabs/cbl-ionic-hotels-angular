@@ -22,7 +22,7 @@ This app is build on Capacitor 6 - and it's recommended you have a basic underst
 
 - UI: [Ionic Framework 8](https://ionicframework.com) and [Angular 17](https://angular.io)
 - Native runtime: [Capacitor 6](https://capacitorjs.com)
-- Database: Couchbase Lite v3.x using [CBL-Ionic](https://cbl-ionic.dev)
+- Database: Couchbase Lite v3.2.1 using [CBL-Ionic](https://cbl-ionic.dev)
 
 ## How to Run
 
@@ -30,29 +30,10 @@ Note: Installing and running this app, which uses Couchbase Lite Enterprise Edit
 
 - Install the Ionic CLI: `npm install -g @ionic/cli`
 
-### Setup cbl-ionic plugin
-
-- Clone the following repos into the same folder
-
+- Clone the repo:
 ```shell
-    git clone git@github.com:biozal/cbl-ionic-hotels-angular.git
-    git clone --recurse-submodules git@github.com:Couchbase-Ecosystem/cbl-ionic.git
-    cd cbl-ionic
-    git submodule update --remote --recursive
+git clone git@github.com:couchbaselabs/cbl-ionic-hotels-angular.git
 ```
-
-
-- Setup cbl-ionic by installing the dependencies and building the plugin 
-    ```shell
-    npm install
-    cd ios
-    pod install
-    cd ..
-    npm run build
-    cd ..
-    ```
-
-### Setup demo app 
 
 - Install the dependencies for the demo app 
     ```shell
@@ -68,11 +49,6 @@ Note: Installing and running this app, which uses Couchbase Lite Enterprise Edit
   npm run build
   npx cap sync
  ```
-- Run the app on your device from Xcode:
- ```shell
-    npx cap open ios
- ```
- or 
  - Run via capacitor (recommended)
  **iOS**
  ```shell
